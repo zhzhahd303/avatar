@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Heirof';
+    font-style: normal; font-weight: 500; text-rendering: optimizeLegibility;
+    src: url('css/font/HeirofLightRegular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('css/font/HeirofLightRegular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('css/font/HeirofLightRegular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('css/font/HeirofLightOTFRegular.otf') format('opentype'); /* Mac */
+}
+
+@font-face {
+    font-family: 'Heirof bold';
+    font-style: normal; font-weight: 600; text-rendering: optimizeLegibility;
+    src: url('css/font/bold/HeirofLightBold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('css/font/bold/HeirofLightBold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('css/font/bold/HeirofLightBold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('css/font/bold/HeirofLightOTFBold.otf') format('opentype'); /* Mac */
+}
+        
+        *{margin: 0; padding: 0; }
+        ol,ul,li{list-style: none;}
+        a{text-decoration: none;}
+        
+
+        @media(max-width:860px){
+            #wrap{background: black; overflow: hidden;}
+            #top{width: 100%; height: 82vw; display: flex; flex-wrap: wrap; justify-content: center; align-content: baseline; margin: 0 auto; background-image:url(../img/back5-1.jpg); background-position: center; background-size: cover;}
+
+            #top h3{color: white; width: 100%; text-align: center; padding: 24% 0 12% 0; font-size: 7vw; font-family: 'Heirof';}
+            #pcwrap{width: 92%; overflow: hidden; margin: 0 auto;}
+            #pc{width: 200%;} #pc img{width:50%; float:left;} #pc img:hover{cursor: pointer;}
+            #top span {position: absolute; top:30%; display: block; font-size: 8vw; color:#fff; line-height: 40px;}
+            #top span:hover{cursor: pointer; color: gray;}
+            .prev {left:0%; border-radius: 0 10px 10px 0px; padding:10px;}
+            .next {right:0%; border-radius: 10px 0px 0px 10px; padding:10px;}  
+
+
+            #ch{width: 100%; height: 70vw; display: flex; justify-content: center; flex-wrap: wrap; margin: 7% auto 35% auto; padding: 7% 0 5% 0;}
+            .g{width: 22vw; height: 22vw; margin: 5% ; overflow: hidden; border-radius: 50%; cursor: pointer; background-position: center; background-size: cover; opacity: 0.8;}
+            .g:hover{text-shadow: 3px 3px 8px black; opacity: 1;}
+            .g:nth-of-type(1){background-image: url(../img/one2.webp);}
+            .g:nth-of-type(2){background-image: url(../img/one3.webp);}
+            .g:nth-of-type(3){background-image: url(../img/one6.webp);}
+            .g:nth-of-type(4){background-image: url(../img/one7.webp);}
+            .g:nth-of-type(5){background-image: url(../img/one1.webp);}
+
+            .g>p{z-index: 5; height: 50%; position: relative; top:7.5vw; left:0px; font-size: 4.4vw; text-align: center; color: white;}
+            .g:nth-of-type(4)>p{font-size: 4.4vw; top:7.5vw; left:0px; text-align: center; }
+            .g:nth-of-type(5)>p{font-size: 4.4vw; position: relative; top:7.5vw; left:-0.3vw; text-align: center; }
+
+        }
+
+        @media(min-width:861px) and (max-width:1299px){
+            #wrap{background: black; height: auto; overflow: hidden;}
+            #top{width: 100%; height: 65vw; display: flex; flex-wrap: wrap; justify-content: center; align-content: baseline; margin: 0 auto; background-image:url(../img/back5-1.jpg); background-position: center; background-size: cover;}
+
+            #top h3{color: white; width: 100%; text-align: center; padding: 17% 0 10% 0; font-size: 5vw; font-family: 'Heirof';}
+            #pcwrap{width: 92%; overflow: hidden; margin: 0 auto;}
+            #pc{width: 200%;} #pc img{width:50%; float:left;} #pc img:hover{cursor: pointer;}
+            #top span {position: absolute; top:45%; display: block; font-size: 4vw; color:#fff; line-height: 40px;}
+            #top span:hover{cursor: pointer; color: gray;}
+            .prev {left:2%; border-radius: 0 10px 10px 0px; padding:10px;}
+            .next {right:2%; border-radius: 10px 0px 0px 10px; padding:10px;}  
+
+
+            #ch{width: 90%; height:auto; display: flex; justify-content: space-between; margin:4% auto 17% auto; }
+            .g{width: 12vw; height: 12vw; margin-top: 11%; overflow: hidden;  padding: 5% 2%; border-radius: 50%; cursor: pointer; background-position: center; background-size: cover; opacity: 0.8;}
+            .g:hover{text-shadow: 3px 3px 8px black; opacity: 1;}
+            .g:nth-of-type(1){background-image: url(../img/one2.webp);}
+            .g:nth-of-type(2){background-image: url(../img/one3.webp);}
+            .g:nth-of-type(3){background-image: url(../img/one6.webp);}
+            .g:nth-of-type(4){background-image: url(../img/one7.webp);}
+            .g:nth-of-type(5){background-image: url(../img/one1.webp);}
+
+            .g>p{z-index: 5; height: 50%; position: relative; top:0.4vw; left:0px; font-size: 2.5vw; text-align: center; color: white;}
+            .g:nth-of-type(4)>p{font-size: 2.5vw; top:0.4vw; left:0px; text-align: center; }
+            .g:nth-of-type(5)>p{font-size: 2.5vw; position: relative; top:0.4vw; left:-0.3vw; text-align: center; }
+
+        }
+
+        @media(min-width:1300px){
+            #wrap{background: black; height: auto; overflow: hidden;}
+            #top{width: 100%; height: 50vw; display: flex; flex-wrap: wrap; justify-content: center; align-content: baseline; margin: 0 auto; background-image:url(../img/back5-1.jpg); background-position: center; background-size: cover;}
+
+            #top h3{color: white; width: 100%; text-align: center; padding: 10% 0 6% 0; font-size: 3vw; font-family: 'Heirof';}
+            #pcwrap{width: 85%; overflow: hidden; margin: 0 auto;}
+            #pc{width: 200%;}
+            #pc img{width:50%; float:left;} #pc img:hover{cursor: pointer;}
+            #top span {position: absolute; top:40%; display: block; font-size: 4vw; color:#fff; line-height: 40px;}
+            #top span:hover{cursor: pointer; color: gray;}
+            .prev {left:2%; border-radius: 0 10px 10px 0px; padding:10px;}
+            .next {right:2%; border-radius: 10px 0px 0px 10px; padding:10px;}  
+        
+
+            #ch{width: 80%; height: auto; display: flex; flex-wrap: wrap; justify-content: space-between;  margin: 7% auto 5% auto; padding: 3%;}
+            .g{width: 10vw; height: 10vw; overflow: hidden;  padding: 2%; border-radius: 50%; cursor: pointer; background-position: center; background-size: cover; opacity: 0.8;}
+            .g:hover{text-shadow: 2px 2px 8px black; opacity: 1;}
+            .g:nth-of-type(1){background-image: url(../img/one2.webp);}
+            .g:nth-of-type(2){background-image: url(../img/one3.webp);}
+            .g:nth-of-type(3){background-image: url(../img/one6.webp);}
+            .g:nth-of-type(4){background-image: url(../img/one7.webp);}
+            .g:nth-of-type(5){background-image: url(../img/one1.webp);}
+            
+            .g>p{z-index: 5; height: 50%; position: relative; top:2vw; left:0px; font-size: 2vw; color: white; text-align: center;}
+            .g:nth-of-type(4)>p{top:2vw; left:0px; text-align: center;}
+            .g:nth-of-type(5)>p{color: white; font-size: 2vw; position: relative; top:2vw; left:0px; text-align: center;}
+
+        }

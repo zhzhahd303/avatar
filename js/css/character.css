@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Heirof';
+    font-style: normal; font-weight: 500; text-rendering: optimizeLegibility;
+    src: url('../css/font/HeirofLightRegular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../css/font/HeirofLightRegular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../css/font/HeirofLightRegular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../css/font/HeirofLightOTFRegular.otf') format('opentype'); /* Mac */
+    }
+
+    @font-face {
+    font-family: 'Heirof bold';
+    font-style: normal; font-weight: 600; text-rendering: optimizeLegibility;
+    src: url('../css/font/bold/HeirofLightBold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../css/font/bold/HeirofLightBold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../css/font/bold/HeirofLightBold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../css/font/bold/HeirofLightOTFBold.otf') format('opentype'); /* Mac */
+    }
+
+        *{margin: 0; padding: 0; }
+        ol,ul,li{list-style: none;}
+        a{text-decoration: none;}
+        #wrap{width: 100%;}
+        #top{width: 100%; height: 45vw; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin: 0 auto; background-image:url(../img/Untitled-3.jpg); background-position: center; background-size: cover;}
+        #top .p1{transform: translateY(15px); transition: all 2s; opacity: 0; width: 100%; color: white; text-align: center; font-family: 'Heirof'; font-size: 3vw; margin-top: -9%; line-height: 5.7vw; text-shadow: 5px 5px 6px rgb(8, 34, 44) ;}
+        #top .p1 span:nth-of-type(1){font-size: 3.7vw; font-family: 'Heirof'; color: white; text-shadow: 5px 5px 8px rgb(8, 34, 44) ;}
+        
+
+        #video{width: 100%; margin: 0 auto; padding:2vw 0 2vw 0 ; background: black; display: flex;}
+        #video video{width: 87%;  margin: 0 auto; }
+        
+        #people1{width: 100%; height: 64vw; background-image: url(../img/back4.jpg); background-position: center; background-size: cover;}
+        #people1 #one{width: 32%;  margin: 0 0% 0 6%; background: black; border-radius: 5%; box-shadow: 0 0 10px white;}
+        #people1 #two{width: 54%; height: 30vw; box-shadow: 0 0 10px; margin: 0 0 0 1.2%; background-image: url(../img/black.png); background-position: center; border-radius: 5%; color: white;}
+        #people1 #two h4{font-size: 2vw; font-family: 'Heirof'; font-weight: lighter;} #people1 #two h5{font-size: 1.2vw; padding-bottom: 5%;}
+        #people1 #two div{padding:3% 5% 5% 5%; height: auto;}
+        #people1 #two div p{font-size: 1.2vw; line-height: 1.8vw;}
+        #Neytiri, #Kiri, #Ronal, #Tonowari, #Tsireya, #Loak, #Miles {display: none;}
+       
+        
+
+        #character{width: 80%; margin: 0 auto; display: flex; flex-wrap: wrap; }
+        #character h3{text-shadow: 1px 1px rgb(0, 0, 0) ; font-weight:900; font-family: 'Heirof bold'; width: 100%; font-size: 2vw; font-weight: 100; text-align: center; position: relative;  padding: 5%; color: rgb(244, 248, 255);}
+        #character h2{ width: 100%; font-size: 2.5vw; font-family: 'Heirof bold'; text-align: center; padding: 6.5%; color: rgb(244, 248, 255); margin: 0 0 0 -1%; }
+        
+        #character #picture{ display: flex; flex-wrap: wrap; justify-content: center;}
+        #character #picture img{width:100%;  opacity: 0.9; }
+        #character #picture img:hover{opacity: 1; transform: scale(1.05); cursor: pointer;}
+        #character #picture>div{width:10%; background: black; margin: 2% 0; border-radius: 5%; margin: 1.5% 0.5%;}
+        #character #picture>div p{color: white; text-align: center; padding: 0 0 8% 0; font-size: 1.1vw; font-family: 'Heirof'; font-weight: lighter;}
+       
+        @media(max-width:860px){
+        #top{width: 100%; height: 60vw; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin: 0 auto; background-image:url(../img/Untitled-3.jpg); background-position: center; background-size: cover;}
+        #top .p1{transform: translateY(15px); transition: all 2s; opacity: 0; width: 100%; color: white; text-align: center; font-family: 'Heirof';;font-size: 4vw; margin-top: -8%; line-height: 6vw; text-shadow: 5px 5px 6px rgb(8, 34, 44) ;}
+        #top .p1 span:nth-of-type(1){font-size: 5vw; font-family: 'Heirof'; color: white; text-shadow: 5px 5px 8px rgb(8, 34, 44) ;}
+        
+
+        #video{width: 100%; margin: 0 auto; padding:2vw 0 2vw 0 ; background: black; display: flex;}
+        #video video{width: 95%;  margin: 0 auto; }
+        
+        #people1{width: 100%; height: 160vw; background-image: url(../img/back4.jpg); background-position: center; background-size: cover;}
+        #people1 #one{width: 46.5%;  height: 53vw; margin: 0; background: black; border-radius: 5%; box-shadow: 0 0 10px white;}
+        #people1 #two{width: 46.5%; height: 53vw; box-shadow: 0 0 10px; margin: 0; background-image: url(../img/black.png); background-position: center; border-radius: 5%; color: white;}
+        #people1 #two h4{font-size: 3.5vw;  font-family: 'Heirof'; font-weight: lighter;} #people1 #two h5{font-size: 2.5vw; padding-bottom: 10%;}
+        #people1 #two div{padding:3% 5% 0% 5% ; height: auto;}
+        #people1 #two div p{font-size: 1.5vw; line-height: 3vw;}
+        #people1 #two div br{display: none;}
+        #Neytiri, #Kiri, #Ronal, #Tonowari, #Tsireya, #Loak, #Miles {display: none;}
+       
+        
+
+        #character{width: 100%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-evenly;}
+        #character h3{text-shadow: 1px 1px rgb(0, 0, 0) ; font-weight:900; font-family: 'Heirof'; width: 100%; font-size: 4vw; font-weight: 100; text-align: center; position: relative;  padding: 7%; color: rgb(244, 248, 255);}
+        #character h2{width: 100%; font-size: 4vw;  text-align: center; padding: 8% 0 5% 0; color: rgb(244, 248, 255); margin: 0 0 0 -1%;}
+        
+        #character #picture{ display: flex; flex-wrap: wrap; justify-content: space-evenly}
+        #character #picture img{width:100%;  opacity: 0.9; }
+        #character #picture img:hover{opacity: 1; transform: scale(1.05); cursor: pointer;}
+        #character #picture>div{width:23%; background: black; border-radius: 5%; margin: 1.5% 0; }
+        #character #picture>div p{color: white; text-align: center; font-family: 'Heirof'; font-weight: 100; padding: 0 0 8% 0; font-size: 3vw;}
+        }
+   
+        @media(min-width:861px) and (max-width:1299px){
+            #top{width: 100%; height: 45vw; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin: 0 auto; background-image:url(../img/Untitled-3.jpg); background-position: center; background-size: cover;}
+        #top .p1{transform: translateY(15px); transition: all 2s; opacity: 0; width: 100%; color: white; text-align: center; font-family: 'Heirof';font-size: 3.5vw; margin-top: -6%; line-height: 5.7vw; text-shadow: 5px 5px 6px rgb(8, 34, 44) ;}
+        #top .p1 span:nth-of-type(1){font-size: 4vw; font-family: 'Heirof'; color: white; text-shadow: 5px 5px 8px rgb(8, 34, 44) ;}
+        
+
+        #video{width: 100%; margin: 0 auto; padding:2vw 0 2vw 0 ; background: black; display: flex;}
+        #video video{width: 92%;  margin: 0 auto; }
+        
+        #people1{width: 100%; height: 80vw; background-image: url(../img/back4.jpg); background-position: center; background-size: cover;}
+        #people1 #one{width: 32%; height: 40vw; margin: 0 0% 0 6%; background: black; border-radius: 5%; box-shadow: 0 0 10px white;}
+        #people1 #two{width: 54%; height: 40vw; box-shadow: 0 0 10px; margin: 0 0 0 1.2%; background-image: url(../img/black.png); background-position: center; border-radius: 5%; color: white;}
+        #people1 #two h4{font-size: 2.5vw; font-family: 'Heirof'; font-weight: lighter;} #people1 #two h5{font-size: 2vw; padding-bottom: 5%;}
+        #people1 #two div{padding: 7% 5%; height: auto;}
+        #people1 #two div p{font-size: 1.7vw; line-height: 2.5vw;}
+        #people1 #two div p br{display: none;}
+        #Neytiri, #Kiri, #Ronal, #Tonowari, #Tsireya, #Loak, #Miles {display: none;}
+       
+        
+
+        #character{width: 95%; margin: 0 auto; display: flex; flex-wrap: wrap; }
+        #character h3{text-shadow: 1px 1px rgb(0, 0, 0) ; font-weight:900; font-family: 'Papyrus'; width: 100%; font-size: 3vw; font-weight: bolder; text-align: center; position: relative;  padding: 5%; color: rgb(244, 248, 255);}
+        #character h2{ width: 100%; font-size: 3.5vw;  text-align: center; padding: 6.5% 0 3% 0; color: rgb(244, 248, 255); margin: 0 0 0 -1%; }
+        
+        #character #picture{ display: flex; flex-wrap: wrap; justify-content: center;}
+        #character #picture img{width:100%;  opacity: 0.9; }
+        #character #picture img:hover{opacity: 1; transform: scale(1.05); cursor: pointer;}
+        #character #picture>div{width:10%; background: black; margin: 2% 0; border-radius: 5%; margin: 1.5% 0.5%;}
+        #character #picture>div p{color: white; text-align: center; padding: 0 0 8% 0; font-size: 1.4vw; font-family: 'Heirof'; font-weight: lighter;}
+
+        }
